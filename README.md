@@ -9,14 +9,14 @@ The application fetches data from a backend Weather API.
 
 ---
 
-## Features
+### Features
 
 - React-based user interface
 - Fetches weather data from a REST API
 
 ---
 
-## API configuration
+### API configuration
 
 You can change the backend API URL in the following file:
 
@@ -28,12 +28,12 @@ Example:
 export const API_URL = "http://localhost:8080/api/v1";
 ```
 
-## Requirements
+### Requirements
 
 - Docker
 - Docker Compose
 
-## Clone repository
+### Clone repository
 
 - git clone https://github.com/slavxyz/weather-ui.git
 - cd weather-ui
@@ -42,22 +42,22 @@ export const API_URL = "http://localhost:8080/api/v1";
 
  - docker compose up -d --build
 
-## Open browser 
+### Open browser 
 ```
 http://localhost:3000/
 ```
 
-### Run the project without Docker
+## Run the project without Docker
 
 
-## Clone repository
+### Clone repository
 
 - git clone https://github.com/slavxyz/weather-ui.git
 - cd weather-ui
 - npm install
 - npm run dev
 
-## Open browser 
+### Open browser 
 ```
 http://localhost:5173/
 ```
