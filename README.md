@@ -1,16 +1,67 @@
-# React + Vite
+# Weather UI (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Weather UI** is a an application built with **ReactJS** that consumes the Weather API and displays:
 
-Currently, two official plugins are available:
+- the current temperature
+- a temperature trend based on the last 10 days
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The application fetches data from a backend Weather API.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Features
 
-## Expanding the ESLint configuration
+- React-based user interface
+- Fetches weather data from a REST API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## API configuration
+
+You can change the backend API URL in the following file:
+
+src/config/api.js
+
+Example:
+
+```js
+export const API_URL = "http://localhost:8080/api/v1";
+```
+
+## Requirements
+
+- Docker
+- Docker Compose
+
+## Clone repository
+
+- git clone https://github.com/slavxyz/weather-ui.git
+- cd weather-ui
+
+## Run the project with Docker
+
+ - docker compose up -d --build
+
+## Open browser 
+```
+http://localhost:3000/
+```
+
+### Run the project without Docker
+
+
+## Clone repository
+
+- git clone https://github.com/slavxyz/weather-ui.git
+- cd weather-ui
+- npm install
+- npm run dev
+
+## Open browser 
+```
+http://localhost:5173/
+```
+
+
+
+
