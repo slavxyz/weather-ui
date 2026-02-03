@@ -44,7 +44,7 @@ export const API_URL = "http://localhost:8080/api/v1";
 
 ### Open browser 
 ```
-http://localhost:3000/
+http://localhost:5173/
 ```
 
 ## Run the project without Docker
