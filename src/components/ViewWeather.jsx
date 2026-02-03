@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import { LOADING_TEXT } from '../constants'
 
-
 function ViewWeather(props) {
-    const CITY_NOT_FOUND = 'City not found'
     const CHOOSE_CITY = 'Choose city'
 
     const { result, loading, error } = props
@@ -16,7 +13,7 @@ function ViewWeather(props) {
                 <h1>
                     {result ? `${result.day}, ${result.date}` : CHOOSE_CITY}
                 </h1>
-                {error && <p className="error">{CITY_NOT_FOUND}</p>}
+                {error && <p className="error">{error}</p>}
                 <h2 className="city">{result ? result.city : ""}</h2>
                 <p className="temperature">{result ? `${result.temperature}°C` : ""}</p>
                 <p className="temperature">{result ? result.trend : ""}</p>
